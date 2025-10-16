@@ -2,6 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12.6-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+<a href="https://cla-assistant.io/ParthProLegend/reddit-userbot-praw-basic"><img src="https://cla-assistant.io/readme/badge/ParthProLegend/reddit-userbot-praw-basic" alt="CLA assistant" /></a>
 
 ### ```⚠️ Project is in Alpha phase so bugs and functionality limitations are there.```
 #### ```I have worked hard to fix the ones I found but still feel free to raise any issues. All contributions are welcome.```
