@@ -1,4 +1,4 @@
-# Reddit Userbot Basic (PRAW)
+# Reddit Userbot Basic (PRAW)         <a href='https://ko-fi.com/parthprolegend' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt="Buy Me a Bo'oh'o'wa'er at ko-fi.com" /></a>
 
 ![Python](https://img.shields.io/badge/Python-3.12.6-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -30,6 +30,8 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 - Python 3.12.6 (NOT test for other versions)
 - A Reddit account
 - Reddit API credentials (client ID, client secret, username, password, and user agent)
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/parthprolegend)
 
 ## Installation
 
@@ -65,6 +67,8 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
    ```
 
 2. The bot will upvote and reply to comments in the specified subreddit.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/parthprolegend)
 
 ## Notes
 
@@ -115,3 +119,4 @@ Contributions are welcome! To contribute:
 3. Commit your changes and push them to your fork.
 4. Submit a pull request with a detailed description of your changes.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/parthprolegend)

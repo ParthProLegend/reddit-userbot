@@ -4,3 +4,4 @@ config.ini
 .venv3126/
 desktop.ini
 .vscode/
+app.log
