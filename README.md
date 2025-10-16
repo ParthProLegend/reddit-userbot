@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
 ### ```⚠️ Project is in Alpha phase so bugs and functionality limitations are there.```
-#### ```I have worked hard to fix the ones i found but still feel free to raise any issues. All contributions are welcome.```
+#### ```I have worked hard to fix the ones I found but still feel free to raise any issues. All contributions are welcome.```
 
 This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW). The bot is designed to interact with Reddit by upvoting and replying to comments in a specific subreddit. It demonstrates basic usage of the PRAW library and serves as a starting point for building more advanced Reddit bots.
 
