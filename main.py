@@ -9,20 +9,20 @@ except ImportError as e:
     raise
 
 class RedditUserbotClass():
-    def __init__(self, logging_enabled=True):
+    def __init__(self, logging_enabled: bool = True):
 
         try:
-            print("Importing .env configuration file.")
+            print("Importing .ini configuration file.")
             self.config = configparser.ConfigParser()
-            self.config.read('.env')
-            print("✅ Configuration successfully read from .env file.")
+            self.config.read('.ini')
+            print("✅ Configuration successfully read from .ini file.")
         except Exception as e:
-            print(f"❌ Error reading .env file: {e}. Please ensure the file exists and is properly formatted.")
+            print(f"❌ Error reading .ini file: {e}. Please ensure the file exists and is properly formatted.")
             raise
 
         if logging_enabled:
-            level_str = self.config['logging']['level'].upper()
-            level = getattr(logging, level_str)
+            logging_level_str = self.config['logging']['level'].upper()
+            level = getattr(logging, logging_level_str)
             filename = self.config['logging']['file']
             logging.basicConfig(level=level, filename=filename, format='%(asctime)s - %(levelname)s - %(message)s')
             logging.info("Logging is enabled. Check the app.log file for details.")
@@ -41,7 +41,7 @@ class RedditUserbotClass():
             self.last_n_submissions_to_check = int(self.config['account_reddit'].get('number_of_submissions_to_check', 10))
             logging.info(f"✅ Reddit API credentials located and initialized.")
         except KeyError as e:
-            logging.error(f"❌ Missing configuration for {e}. Please check your .env file.")
+            logging.error(f"❌ Missing configuration for {e}. Please check your .ini file.")
             raise
 
         try:
@@ -63,8 +63,8 @@ class RedditUserbotClass():
 
     def userbot(self, upvote=False, upvote_clear=False, reply=False):
         logging.info("Starting userbot process.")
+        self.i = 0
         for self.submission in self.reddit.subreddit(self.subreddit_value).new(limit=self.last_n_submissions_to_check):
-            self.i = 0
             logging.info(f"Processing submission: {self.submission.title}")
             if self.i < self.last_n_submissions_to_check - 1:
                 self.i += 1
@@ -149,7 +149,7 @@ class RedditUserbotClass():
             self.system_instruction = str(self.config['google_api']['system_instruction']).strip()
             logging.info(f"✅ Google Gemini API credentials located and initialized.")
         except KeyError as e:
-            logging.error(f"❌ Missing configuration for {e}. Please check your .env file.")
+            logging.error(f"❌ Missing configuration for {e}. Please check your .ini file.")
             raise
 
         try:

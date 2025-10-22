@@ -5,3 +5,5 @@ config.ini
 desktop.ini
 .vscode/
 app.log
+.ini
+main_fix.py

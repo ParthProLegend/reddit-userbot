@@ -36,13 +36,13 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 
 ### v.0.1.0 (Initial Release)
 - Basic Reddit userbot using PRAW for upvoting and replying to comments.
-- Simple configuration via `.env` file.
+- Simple configuration via `.ini` file.
 - Basic error handling and logging.
 
 ## Features
 
 - 🚀 Automatically upvotes and replies to comments in a specified subreddit.
-- ⚙️ Configurable through an `.env` file.
+- ⚙️ Configurable through an `.ini` file.
 - 🔗 Uses PRAW for seamless interaction with Reddit's API.
 - 🛠️ Improved logging and error handling for better debugging.
 - 🎨 Colored output in the terminal for enhanced visibility.
@@ -86,7 +86,7 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
    source venv/bin/activate
    ```
 
-3. Create a `.env` file in the root directory and add your Reddit API credentials:
+3. Create a `.ini` file in the root directory and add your Reddit API credentials:
    ```ini
    [account_reddit]
    client_id = YOUR_CLIENT_ID
@@ -98,13 +98,13 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
    number_of_submissions_to_check = NUMBER (default:20 if not provided)
    ```
 
-   **Note**: The `.env` file contains sensitive information (API keys, credentials) and is not tracked by Git (see `.gitignore`). Do not commit it to version control to avoid exposing your credentials.
+   **Note**: The `.ini` file contains sensitive information (API keys, credentials) and is not tracked by Git (see `.gitignore`). Do not commit it to version control to avoid exposing your credentials.
 
    Note: For Setting Up the **[PRAW](https://github.com/praw-dev/praw)** interface to obtain client_id and client_secret, check out **[OAuth2 Quick Start:First Steps](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps)**
 
 4. (optional) Generate your own API key from **[Google AI Studio](https://aistudio.google.com/api-keys)** and here's the Guide to generate API key on **[Google AI Studio](https://ai.google.dev/gemini-api/docs/api-key)**
 
-5. Additional configuration in the `.env` file is required for logging and Google GenAI integration.
+5. Additional configuration in the `.ini` file is required for logging and Google GenAI integration.
    ```ini
    [logging]
    level = INFO
@@ -127,7 +127,7 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 
 2. The bot will upvote and reply to comments in the specified subreddit.
 
-3. (Pending Implementation) Configure the bot's behavior in the `.env` file:
+3. (Pending Implementation) Configure the bot's behavior in the `.ini` file:
    ```ini
    [bot_settings]
    upvote_comments = True
@@ -135,7 +135,7 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
    clear_votes = True
    ```
 
-4. To use Google GenAI (Gemini) for replies, set up the `GOOGLE_API_KEY` in the `.env` file.
+4. To use Google GenAI (Gemini) for replies, set up the `GOOGLE_API_KEY` in the `.ini` file.
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/parthprolegend)
 
@@ -143,8 +143,8 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 
 - The bot clears upvotes after a short delay to comply with Reddit's rules.
 - Ensure that your bot's actions comply with Reddit's API terms of service.
-- For detailed output logs, check the `app.log` file or whatever is defined in your .env.
-- The logging configuration can be adjusted in the `main.py` and `.env` file. By default, it logs to `app.log` with a log level of `INFO`.
+- For detailed output logs, check the `app.log` file or whatever is defined in your .ini.
+- The logging configuration can be adjusted in the `main.py` and `.ini` file. By default, it logs to `app.log` with a log level of `INFO`.
 - The `ColorCycler` class is used for cycling colors in terminal output. Ensure your terminal supports ANSI colors.
 
 ## Notices
@@ -211,13 +211,13 @@ Buy me a coffee at https://ko-fi.com/parthprolegend to support my work. ☕️
 ## Troubleshooting
 
 - **Issue**: `Invalid credentials` error.
-  - **Solution**: Double-check your `.env` file for correct Reddit API credentials.
+  - **Solution**: Double-check your `.ini` file for correct Reddit API credentials.
 - **Issue**: Bot does not upvote or reply.
   - **Solution**: Ensure the subreddit exists and has new posts.
 - **Issue**: Rate limit errors.
   - **Solution**: Reduce the bot's activity or add delays between actions.
 - **Issue**: Google GenAI integration problems.
-  - **Solution**: Verify `GOOGLE_API_KEY` in the `.env` file and check your Google Cloud project settings.
+  - **Solution**: Verify `GOOGLE_API_KEY` in the `.ini` file and check your Google Cloud project settings.
 - **Issue**: Colored terminal output not working.
   - **Solution**: Ensure your terminal supports ANSI colors. If using Windows, consider using Windows Terminal or enabling ANSI support in the command prompt.
 
