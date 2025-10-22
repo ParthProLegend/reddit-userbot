@@ -2,9 +2,10 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12.6-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+<a href="https://cla-assistant.io/ParthProLegend/reddit-userbot-praw-basic"><img src="https://cla-assistant.io/readme/badge/ParthProLegend/reddit-userbot-praw-basic" alt="CLA assistant" /></a>
 
 ### ```⚠️ Project is in Alpha phase so bugs and functionality limitations are there.```
-#### ```I have worked hard to fix the ones i found but still feel free to raise any issues. All contributions are welcome.```
+#### ```I have worked hard to fix the ones I found but still feel free to raise any issues. All contributions are welcome.```
 
 This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW). The bot is designed to interact with Reddit by upvoting and replying to comments in a specific subreddit. It demonstrates basic usage of the PRAW library and serves as a starting point for building more advanced Reddit bots.
 
