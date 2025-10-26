@@ -1,4 +1,4 @@
-# Reddit Userbot Basic (PRAW) v.0.2.0         <a href='https://ko-fi.com/parthprolegend' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt="Buy Me a Bo'oh'o'wa'er at ko-fi.com" /></a>
+# Reddit Userbot (PRAW) v.0.2.0         <a href='https://ko-fi.com/parthprolegend' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi6.png?v=6' border='0' alt="Buy Me a Bo'oh'o'wa'er at ko-fi.com" /></a>
 
 ![Python](https://img.shields.io/badge/Python-3.12.6-blue)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
