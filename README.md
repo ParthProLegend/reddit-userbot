@@ -148,6 +148,41 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 - The logging configuration can be adjusted in the `main.py` and `.ini` file. By default, it logs to `app.log` with a log level of `INFO`.
 - The `ColorCycler` class is used for cycling colors in terminal output. Ensure your terminal supports ANSI colors.
 
+## Example .INI file
+
+The bot need .ini file to run successfully, like this sample (with auto-replying enabled):
+
+For Setting Up the **[PRAW](https://github.com/praw-dev/praw)** interface to obtain client_id and client_secret, check out **[OAuth2 Quick Start:First Steps](https://github.com/reddit-archive/reddit/wiki/OAuth2-Quick-Start-Example#first-steps)**
+
+```ini
+[account_reddit]
+client_id = YOUR_CLIENT_ID
+client_secret = YOUR_CLIENT_SECRET
+password = YOUR_ACCOUNT_PASSWORD
+user_agent = PythonDesktop:PRAW:0.0.2 (by /u/RedditUsername for Testing Purposes)
+username = YOUR_ACCOUNT_USERNAME
+subreddit = SUBREDDIT_NAME_WHERE_YOU_WANT_TO_RUN_THE_BOT
+number_of_submissions_to_check = NUMBER_OF_SUBMISSIONS_TO_CHECK_IN_THE_SUB_USING_NEW_SORTING
+
+[google_api]
+google-genai = 1.44.0
+GEMINI_API_KEY = YOUR_GEMINI_API_KEY
+system_instruction = YOUR_SYSTEM_INSTRUCTION (like: You are a human. Always be family friendly and polite, do not lie, do not respond professionally like a bot. You are not OP, and you does not refer to you.)
+response_base = YOUR_RESPONSE_BASE (like: Give a short response to "{comment_body}" in response to a reddit with \"Title: {submission_title} and Content: {submission_selftext}\" in about 20 words.)
+
+[logging]
+enabled = True ; (Not Implemented Yet, planned)
+level = INFO (Choose between DEBUG/INFO)
+file = app.log (or any FILE_NAME.log)
+
+[configuration]
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+PROXY = None
+REQUEST_DELAY = 15
+MAX_RETRIES = 10
+ERROR_TIMEOUT = 60
+```
+
 ## Notices
 
 This project uses the PRAW library to interact with Reddit's API. PRAW is developed and maintained by the PRAW Dev Team. For more information, visit the [PRAW GitHub repository](https://github.com/praw-dev/praw).
@@ -187,9 +222,9 @@ PRAW, an acronym for "Python Reddit API Wrapper", is a Python package that allow
 
 ## Example Output
 
-When the bot runs successfully, you might see colored output like this (colors depend on your terminal support):
+When the bot runs at INFO level logging successfully, you might see colored output like this (colors depend on your terminal support):
 
-```
+```h
 ID: abc123	Title: Example Title	Score: 42
 URL: https://www.reddit.com/r/example/comments/abc123
 Post: This is the post content.
