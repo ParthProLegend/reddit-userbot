@@ -148,7 +148,7 @@ This project is a Reddit userbot built using the Python Reddit API Wrapper (PRAW
 - The logging configuration can be adjusted in the `main.py` and `.ini` file. By default, it logs to `app.log` with a log level of `INFO`.
 - The `ColorCycler` class is used for cycling colors in terminal output. Ensure your terminal supports ANSI colors.
 
-## Example .INI file
+## Example .ini file
 
 The bot need .ini file to run successfully, like this sample (with auto-replying enabled):
 
